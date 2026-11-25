@@ -1,0 +1,114 @@
+.games {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f3f4f6;
+}
+
+.games button {
+    margin: 4px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #25d8f7;
+    color: #111827;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.games button:hover {
+    background-color: #21bfdb;
+    transform: translateY(-2px); /* go up on hover*/
+}
+
+.games button.active{
+    background-color: #f3f4f6;
+    color: #111827;
+    border: 2px solid #25d8f7;
+    transform: translateY(-1px);
+}
+
+.search {
+    margin: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.search input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #3b3b3b;
+    border-radius: 6px;
+    width: 250px;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.message {
+    color: #fca5a5; 
+    background-color: #B91C1C;
+    border-left: 4px solid #ef4444;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 14px 0;
+}
+
+/* Grid of game cards */
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #232324;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    background-color: #3b3b3b;
+}
+
+.game-card:hover {
+    transform: translateY(-2px);
+    border-color: #25d8f7;
+}
+
+.game-card h1{
+    font-size: 1.5rem;
+    color: #ffffff;
+    word-break: break-word;
+}
+
+.game-card img {
+    border-radius: 8px;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.game-card h3 {
+    font-size: 0.9rem;
+    margin: 8px 0 0px;
+    color: #d1d5db;
+}
+
+.game-card p {
+    margin: 4px 0;
+    font-size: 0.85rem;
+    color: #d1d5db;
+    word-break: break-word;
+}
